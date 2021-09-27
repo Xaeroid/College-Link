@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:padding="26dp"
+    tools:context=".ProfileSkillPage">
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="YOUR SKILLS!"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintVertical_bias="0.050000012">
+
+        <CheckBox
+            android:id="@+id/CP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile" />
+
+        <CheckBox
+            android:id="@+id/JavaP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile" />
+
+        <CheckBox
+            android:id="@+id/PythonP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        app:layout_constraintVertical_bias="0">
+
+        <CheckBox
+            android:id="@+id/PHPP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHP"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/RP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/SwiftP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swift"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l2"
+        app:layout_constraintVertical_bias="0">
+
+        <CheckBox
+            android:id="@+id/GoLangP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoLang"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/UnityP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unity"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/JavaSciptP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:onClick="selectItemProfile"
+            android:text="JavaScript"
+            android:textColor="@color/white"
+            android:fontFamily="@font/opensansregular"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l3"
+        app:layout_constraintVertical_bias="0">
+
+        <CheckBox
+            android:id="@+id/KotlinP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/PearlP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pearl"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/RubyP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ruby"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l4"
+        app:layout_constraintVertical_bias="0">
+
+        <CheckBox
+            android:id="@+id/AIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/MLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ML"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/AndroidStudioP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Studio"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l5"
+        app:layout_constraintVertical_bias="0">
+
+        <CheckBox
+            android:id="@+id/IOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IOT"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/WebDevP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WebDev"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/ReactJSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ReactJS"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l6"
+        app:layout_constraintVertical_bias="0">
+
+        <CheckBox
+            android:id="@+id/NodeJSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NodeJS"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/FlutterP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flutter"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/FirebaseP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firebase"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l7"
+        app:layout_constraintVertical_bias="0">
+
+        <CheckBox
+            android:id="@+id/DBMSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DBMS"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/DataScienceP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Science"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+
+        <CheckBox
+            android:id="@+id/UIUXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UI/UX"
+            android:buttonTint="#FFFFFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensansregular"
+            android:onClick="selectItemProfile"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/UpdateP"
+        android:layout_width="97dp"
+        android:layout_height="45dp"
+        android:background = "@drawable/roundedbutton"
+        android:fontFamily="@font/opensansregular"
+        android:text="Update"
+        app:backgroundTint="#FFFFFF"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l8"
+        app:layout_constraintVertical_bias="0.392" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
